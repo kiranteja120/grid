@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <title>grid properties</title>
+    <style>
+        .parent {
+            display: grid;
+            width: 700px;
+            height: 100vh;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            vertical-align: middle;
+
+        }
+
+        /* .child
+            {
+                width:100px;
+                height:100px;
+
+            }*/
+        #a {
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #b {
+            background-color: violet;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 7;
+        }
+
+        #c {
+            background-color: blue;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        #d {
+            background-color: green;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        #e {
+            background-color: orange;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        #f {
+            background-color: indigo;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 7;
+        }
+
+        #g {
+            background-color: pink;
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        #h {
+            background-color: gray;
+            grid-column-start: 6;
+            grid-column-end: 7;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        #i {
+            background-color: aqua;
+            grid-column-start: 7;
+            grid-column-end: 8;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        #j {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 8;
+            grid-row-start: 7;
+            grid-row-end: 8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div id="a" class="child">Navbar</div>
+        <div id="b" class="child">aside</div>
+        <div id="c" class="child">some1</div>
+        <div id="d" class="child">some2</div>
+        <div id="e" class="child">some3</div>
+        <div id="f" class="child">header</div>
+        <div id="g" class="child">article</div>
+        <div id="h" class="child">some4</div>
+        <div id="i" class="child">some5</div>
+        <div id="j" class="child">footer</div>
+
+
+    </div>
+</body>
+
+</html>
