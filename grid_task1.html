@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 100vh;
+            width: 650px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            border: 2px solid black;
+        }
+
+        .Navbar {
+            background-color: orange;
+            grid-column: 1/8;
+            grid-row: 1/1;
+            border: 2px solid black;
+
+        }
+
+        .aside {
+            background-color: greenyellow;
+            grid-column: 1/1;
+            grid-row: 2/7;
+            border: 2px solid black;
+
+        }
+
+        .some1 {
+            background-color: skyblue;
+            grid-column: 2/2;
+            grid-row: 2/4;
+            border: 2px solid black;
+
+        }
+
+        .some2 {
+            background-color: purple;
+            grid-column: 3/3;
+            grid-row: 2/4;
+            border: 2px solid black;
+
+        }
+
+        .header {
+            background-color: palegreen;
+            grid-column: 4/6;
+            grid-row: 2/7;
+            border: 2px solid black;
+
+        }
+
+        .article {
+            background-color: peru;
+            grid-column: 6/8;
+            grid-row: 2/4;
+            border: 2px solid black;
+
+        }
+
+        .some3 {
+            background-color: pink;
+            grid-column: 2/4;
+            grid-row: 4/7;
+            border: 2px solid black;
+
+        }
+
+        .some4 {
+            background-color: blueviolet;
+            grid-column: 6/7;
+            grid-row: 4/7;
+            border: 2px solid black;
+        }
+
+        .some5 {
+            background-color: yellow;
+            grid-column: 7/8;
+            grid-row: 4/7;
+            border: 2px solid black;
+
+        }
+
+        .footer {
+            background-color: gray;
+            grid-column: 1/8;
+            grid-row: 7/7;
+            border: 2px solid black;
+
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container>div {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Navbar">Navbar</div>
+        <div class="aside">aside</div>
+        <div class="some1">some1</div>
+        <div class="some2">some2</div>
+        <div class="header">header</div>
+        <div class="article">article</div>
+        <div class="some3">some3</div>
+        <div class="some4">some4</div>
+        <div class="some5">some5</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>
